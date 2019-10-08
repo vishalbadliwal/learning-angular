@@ -24,7 +24,7 @@ export class BlogHttpService {
     return Observable.throw(err.message);
 
   }
-  public getAllBlogs() {
+  public getAllBlogs(){
 
     let myResponse = this._http.get(this.baseUrl + '/all?authToken=' + this.authToken);
     console.log(myResponse)
